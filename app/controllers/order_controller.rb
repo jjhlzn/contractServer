@@ -9,6 +9,7 @@ class OrderController < ApplicationController
         Rails.logger.debug { "params[:index] = #{params[:index]}" }
         start = index * pageSize
         for i in 0...10 
+          Rails.logger.debug {"start = #{start}, i = #{i}, start + i = #{start + i}"}
           orders.append({id: '11', businessPerson: "金军#{start + i}", 
           contractNo: '122222222', orderNo: 'abcde', 
           amount: 1124.01, guestName: '中国移动'})
