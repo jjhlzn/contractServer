@@ -1,7 +1,17 @@
 Rails.application.routes.draw do
+  get 'login/login'
+
   get 'approval/search'
+  get 'approval/audit'
 
   get 'order/search'
+  get 'order/getBasicInfo'
+  get 'order/getPurchaseInfo'
+  get 'order/getChuyunInfo'
+  get 'order/getFukuangInfo'
+  get 'order/getShouhuiInfo'
+  
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
