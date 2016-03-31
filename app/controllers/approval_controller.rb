@@ -11,7 +11,7 @@ class ApprovalController < ApplicationController
           for i in 0...10 
             approvals.append({id: '11', keyword: "keyword#{start + i}", 
             type: 'type', reporter: '金军航', approvalObject: '测试', 
-            amount: 1124.01, status: '未审核', reportDate: '2016-03-31'})
+            amount: 1124.01, status: '待批', reportDate: '2016-03-31', approveResult: '', type: 'test'})
           end
           render json: {status: 0, errorMessage: '', totalNumber: 40, approvals: approvals}
         end

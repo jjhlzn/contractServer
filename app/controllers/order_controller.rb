@@ -1,5 +1,6 @@
 class OrderController < ApplicationController
   def search
+    sleep 5
     respond_to do |format|
       format.html
       format.json do
@@ -39,7 +40,7 @@ class OrderController < ApplicationController
             contract: 'afbd1234', date: '2016-03-03', factory: '中国移动', amount: 200.01
           })
         end
-        render json: {status: 0, errorMessage: '', purchaseInfo: {items: items}}
+        render json: {status: 0, errorMessage: '', purchaseInfo: items}
       end
     end
   end
