@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get 'order/getFukuangInfo'
   get 'order/getShouhuiInfo'
   
+  get 'product/search'
+  
   
 
   # The priority is based upon order of creation: first created -> highest priority.
