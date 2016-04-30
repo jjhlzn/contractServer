@@ -10,10 +10,10 @@ class ApprovalController < ApplicationController
           start = index * pageSize
           for i in 0...10 
             approvals.append({id: '11', keyword: "keyword#{start + i}", 
-            type: 'type', reporter: '金军航', approvalObject: '测试', 
+            type: 'typefsdf', reporter: '金军航fff', approvalObject: '测试', 
             amount: 1124.01, status: '待批', reportDate: '2016-03-31', approvalResult: '', type: 'test'})
           end
-          render json: {status: 0, errorMessage: '', totalNumber: 40, approvals: approvals}
+          render json: {status: 0, errorMessage: '', totalNumber: 50, approvals: approvals}
         end
       end
   end

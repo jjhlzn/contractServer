@@ -13,7 +13,7 @@ class OrderController < ApplicationController
           Rails.logger.debug {"start = #{start}, i = #{i}, start + i = #{start + i}"}
           orders.append({id: '11', businessPerson: "金军#{start + i}", 
           contractNo: '122222222', orderNo: 'abcde', 
-          amount: 1124.01, guestName: '中国移动'})
+          amount: 1124.01, guestName: '中国移动ddccc', moneyType: '$'})
         end
         render json: {status: 0, errorMessage: '', totalNumber: 40, orders: orders}
       end
