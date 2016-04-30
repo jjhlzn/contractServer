@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   get 'login/login'
+  post 'login/login'
 
   get 'approval/search'
   get 'approval/audit'
+  post 'approval/search'
+  post 'approval/audit'
 
   get 'order/search'
   get 'order/getBasicInfo'
@@ -10,8 +13,15 @@ Rails.application.routes.draw do
   get 'order/getChuyunInfo'
   get 'order/getFukuangInfo'
   get 'order/getShouhuiInfo'
+  post 'order/search'
+  post 'order/getBasicInfo'
+  post 'order/getPurchaseInfo'
+  post 'order/getChuyunInfo'
+  post 'order/getFukuangInfo'
+  post 'order/getShouhuiInfo'
   
   get 'product/search'
+  post 'product/search'
   
   
 
