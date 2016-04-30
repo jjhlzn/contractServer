@@ -1,4 +1,5 @@
 class OrderController < ApplicationController
+  skip_before_action :verify_authenticity_token
   def search
     #sleep 5
     respond_to do |format|

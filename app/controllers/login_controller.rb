@@ -1,4 +1,5 @@
 class LoginController < ApplicationController
+  skip_before_action :verify_authenticity_token
   def login
     loginResult = {success: true, errorMessage: '', name: '金军航', department: '技术部'}
     respond_to do |format|
