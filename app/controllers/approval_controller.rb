@@ -1,4 +1,5 @@
 class ApprovalController < ApplicationController
+  skip_before_filter :verify_authenticity_token
   def search
       respond_to do |format|
         format.html
