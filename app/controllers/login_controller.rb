@@ -9,4 +9,12 @@ class LoginController < ApplicationController
       end
     end
   end
+  
+  def registerdevice
+    render json: {status: 0, errorMessage: ''}
+  end
+  
+  def resetbadge
+    render json: {status: 0, errorMessage: ''}
+  end
 end

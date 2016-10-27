@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   get 'login/login'
   post 'login/login'
+  get 'login/registerdevice'
+  post 'login/registerdevice'
+  get 'login/resetbadge'
+  post 'login/resetbadge'
 
   get 'approval/search'
   get 'approval/audit'
@@ -24,6 +28,14 @@ Rails.application.routes.draw do
   post 'product/search'
   
   
+  get 'price_report/search'
+  post 'price_report/search'
+  get 'price_report/getPriceReport'
+  post 'price_report/getPriceReport'
+  post 'price_report/searchProducts'
+  get 'price_report/searchProducts'
+  get 'price_report/submit'
+  post 'price_report/submit'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
